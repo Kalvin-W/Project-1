@@ -1,0 +1,15 @@
+Create a new script file.
+
+touch sys_info.sh
+
+Change the permissions on the file to make it executable.
+
+chmod +x sys_info.sh
+
+Open the file with nano.
+
+nano sys_info.sh
+
+Add a top hashbang line to make this a bash script.
+
+#!/bin/bash
