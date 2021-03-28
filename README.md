@@ -18,7 +18,7 @@ Machines Being Monitored
 How to Use the Ansible Build
 
 
-Description of the Topology
+<h2>Description of the Topology
 
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -91,7 +91,8 @@ Linux (ubuntu 18.04)
 
 
 
-Access Policies
+<h3>Access Policies
+  
 The machines on the internal network are not exposed to the public Internet.
 Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 -Personal IP Address
@@ -130,12 +131,13 @@ No
 10.0.0.4
 
 
-ELk-Server
+ELk-Server 
 No
 10.1.0.4 & Personal IP
 
 
-Elk Configuration
+<h3>Elk Configuration
+  
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
 The main advantages of automating configuration through Ansible is the ease of use and an extremely easy learning curve. Through the use of Playbooks you are able to configure multiple Machines through the use of a single command after initial configuration.
