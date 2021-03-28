@@ -12,6 +12,7 @@ The ansible-playbooks elk.yml and the filebeat-playbook.yml are needed to create
 This document contains the following details:
 
 Description of the Topology
+
 Access Policies
 ELK Configuration
 Beats in Use
