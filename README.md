@@ -1,5 +1,4 @@
-<h3>Automated ELK Stack Deployment
-
+<h3>Automated ELK Stack Deployment*separate paragraph*
 
 <plain>The files in this repository were used to configure the network depicted below.
 
