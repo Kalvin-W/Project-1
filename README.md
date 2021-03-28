@@ -1,5 +1,5 @@
 
-Automated ELK Stack Deployment
+<h2>Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -43,7 +43,8 @@ DVWA-WEB-2 10.0.0.6 Docker-DVWA Linux (Ubuntu 18.04)
 DVWA-WEB-3 10.0.0.7 Docker-DVWA Linux (Ubuntu 18.04)
 
 ELk-Server 10.1.0.4 Elk Linux (Ubuntu 18.04)
-**Access Policies
+
+<h2>Access Policies
 
 The machines on the internal network are not exposed to the public Internet. Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: -Personal IP Address Machines within the network can only be accessed by SSH.
 
@@ -62,7 +63,8 @@ DVWA-WEB-2 No 10.0.0.4
 DVWA-WEB-3 No 10.0.0.4
 
 ELk-Server No 10.1.0.4 & Personal IP
-**Elk Configuration**
+
+<h2>Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
