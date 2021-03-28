@@ -7,7 +7,8 @@ The files in this repository were used to configure the network depicted below.
 ![](Images/Digrams/Redteam_Network_DM.PNG)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
+<body>
+    These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
 The ansible-playbooks elk.yml and the filebeat-playbook.yml are needed to create and implement the Elk-Server.
 
@@ -99,3 +100,4 @@ Which URL do you navigate to in order to check that the ELK server is running? T
 ssh azadmin@JumpBox(PrivateIP) sudo docker container list -a (locate your ansible container) sudo docker start container (name of the container) sudo docker attach container (name of the container) cd /etc/ansible/ ansible-playbook elk.yml (configures Elk-Server and starts the Elk container on the Elk-Server) wait a couple minutes for the implementation of the Elk-Server cd /etc/ansible/roles/ ansible-playbook filebeat-playbook.yml (installs Filebeat and Metricbeat) open a new web browser (Elk-Server PublicIP:5601) This will bring up the Kibana Web Portal
 
 You will need to ensure all files are properly placed before running the ansible-playbooks.
+<body>
