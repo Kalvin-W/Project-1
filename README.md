@@ -63,7 +63,7 @@ Linux (ubuntu 18.04)
 
 
 DVWA-WEB-1
-10.0.0.9
+10.0.0.5
 Docker-DVWA
 Linux (ubuntu 18.04)
 
