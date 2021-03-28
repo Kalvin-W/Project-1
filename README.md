@@ -1,11 +1,11 @@
-<h2>Automated ELK Stack Deployment
+<h3>Automated ELK Stack Deployment
 
 
-The files in this repository were used to configure the network depicted below.
+<body>The files in this repository were used to configure the network depicted below.
 
 ![](Images/Digrams/Redteam_Network_DM.PNG)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
+<body>These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
 The ansible-playbooks elk.yml and the filebeat-playbook.yml are needed to create and implement the Elk-Server.
 
