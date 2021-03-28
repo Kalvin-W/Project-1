@@ -1,5 +1,5 @@
 
-<h3>Automated ELK Stack Deployment
+<h2>Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -16,7 +16,7 @@ This document contains the following details:
     Machines Being Monitored
     How to Use the Ansible Build
 
-Description of the Topology
+<h2>Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
