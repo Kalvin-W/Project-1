@@ -1,5 +1,5 @@
 
-<h2>**Automated ELK Stack Deployment**
+Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
@@ -32,7 +32,7 @@ What does Metricbeat record? Metricbeat records metric and statistical data from
 
 The configuration details of each machine may be found below:
 
-<h2>Name IP Address Usage OS
+Name IP Address Usage OS
 
 JumpBox 10.0.0.4 Ansible Linux (Ubuntu 18.04)
 
@@ -43,8 +43,7 @@ DVWA-WEB-2 10.0.0.6 Docker-DVWA Linux (Ubuntu 18.04)
 DVWA-WEB-3 10.0.0.7 Docker-DVWA Linux (Ubuntu 18.04)
 
 ELk-Server 10.1.0.4 Elk Linux (Ubuntu 18.04)
-
-<h2>Access Policies
+**Access Policies
 
 The machines on the internal network are not exposed to the public Internet. Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: -Personal IP Address Machines within the network can only be accessed by SSH.
 
@@ -52,7 +51,7 @@ The only machine that is able to connect to the Elk-Server (10.1.0.4) is via Jum
 
 A summary of the access policies in place can be found in the table below.
 
-<h2>Name Publicly Accessible Allowed IP Addresses
+Name Publicly Accessible Allowed IP Addresses
 
 Jump Box No Personal IP Only
 
@@ -63,8 +62,7 @@ DVWA-WEB-2 No 10.0.0.4
 DVWA-WEB-3 No 10.0.0.4
 
 ELk-Server No 10.1.0.4 & Personal IP
-
-<h2>Elk Configuration
+**Elk Configuration**
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
@@ -90,7 +88,7 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 
 Which URL do you navigate to in order to check that the ELK server is running? The URL to use to verify the Elk-Server is running is the Public IP (0.0.0.0:5601)
 
-<h2> The commands needed to run the Ansible configuration for the Elk-Server are:
+### The commands needed to run the Ansible configuration for the Elk-Server are:
 
 ssh azadmin@JumpBox(PrivateIP) sudo docker container list -a (locate your ansible container) sudo docker start container (name of the container) sudo docker attach container (name of the container) cd /etc/ansible/ ansible-playbook elk.yml (configures Elk-Server and starts the Elk container on the Elk-Server) wait a couple minutes for the implementation of the Elk-Server cd /etc/ansible/roles/ ansible-playbook filebeat-playbook.yml (installs Filebeat and Metricbeat) open a new web browser (Elk-Server PublicIP:5601) This will bring up the Kibana Web Portal
 
