@@ -1,7 +1,7 @@
 <h3>Automated ELK Stack Deployment
 
 
-<body>The files in this repository were used to configure the network depicted below.
+<plain>The files in this repository were used to configure the network depicted below.
 
 ![](Images/Digrams/Redteam_Network_DM.PNG)
 
