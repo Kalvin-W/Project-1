@@ -1,8 +1,10 @@
-Automated ELK Stack Deployment
+### Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
+![](Images/Digrams/Redteam_Network_DM.PNG)
+
+<body>These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
 The ansible-playbooks elk.yml and the filebeat-playbook.yml are needed to create and implement the Elk-Server.
 
@@ -15,7 +17,7 @@ This document contains the following details:
     Machines Being Monitored
     How to Use the Ansible Build
 
-Description of the Topology
+### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
@@ -42,7 +44,8 @@ DVWA-WEB-2 10.0.0.6 Docker-DVWA Linux (Ubuntu 18.04)
 DVWA-WEB-3 10.0.0.7 Docker-DVWA Linux (Ubuntu 18.04)
 
 ELk-Server 10.1.0.4 Elk Linux (Ubuntu 18.04)
-Access Policies
+
+<h3>Access Policies
 
 The machines on the internal network are not exposed to the public Internet. Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: -Personal IP Address Machines within the network can only be accessed by SSH.
 
@@ -61,7 +64,8 @@ DVWA-WEB-2 No 10.0.0.4
 DVWA-WEB-3 No 10.0.0.4
 
 ELk-Server No 10.1.0.4 & Personal IP
-Elk Configuration
+
+<h3>Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
@@ -70,7 +74,8 @@ The main advantages of automating configuration through Ansible is the ease of u
 The playbook implements the following tasks:
 
 Create a New VM (should be named something simple "Elk-Server") Keep note of the Private IP (10.1.0.4) and the Public IP (0.0.0.0) you will need the Private IP to SSH into the VM and the Public IP to connect to the Kibana Portal (HTTP Site) to view all Metrics/Syslogs. Download and Configure the "elk-docker" container "In the hosts.conf you will need to add a new group [elkservers] and the Private IP (10.1.0.4) to the group. Then you need to create a new ansible-playbook (elk.yml) that will download, install, configures the "Elk-Server" to map the following ports [5601], and starts the container. Launch and expose the container "After installing and starting the new container. You can verify that the container is up and running by SSHing into the container from your JumpBox (SAW). Once you are in the [Elk-Server] run the command [sudo docker ps] Create new Inbound Security Rules to allow Ports: 5601, 22, 80, 443"The Inbound Security Rules should allow access from your Personal Network" Open a new browser and type in the [Public IP:5601] to access the Kibana Portal Site.
-Using the Playbook
+
+<h2>Using the Playbook
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: SSH into the control node and follow the steps below:
 
