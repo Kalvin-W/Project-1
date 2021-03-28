@@ -132,7 +132,7 @@ No
 
 ELk-Server
 No
-10.0.0.4 & Personal IP
+10.1.0.4 & Personal IP
 
 
 Elk Configuration
