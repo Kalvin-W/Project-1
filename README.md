@@ -1,10 +1,7 @@
 
-
-Automated ELK Stack Deployment
+<h3>Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
-
-![](Images/Digrams/Redteam_Network_DM.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -13,15 +10,10 @@ The ansible-playbooks elk.yml and the filebeat-playbook.yml are needed to create
 This document contains the following details:
 
     Description of the Topology
-
     Access Policies
-
     ELK Configuration
-
     Beats in Use
-
     Machines Being Monitored
-
     How to Use the Ansible Build
 
 Description of the Topology
@@ -70,17 +62,15 @@ DVWA-WEB-2 No 10.0.0.4
 DVWA-WEB-3 No 10.0.0.4
 
 ELk-Server No 10.1.0.4 & Personal IP
+**Elk Configuration**
 
-<h2>Elk Configuration
-
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because…​
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
 The main advantages of automating configuration through Ansible is the ease of use and an extremely easy learning curve. Through the use of Playbooks you are able to configure multiple Machines through the use of a single command after initial configuration.
 The playbook implements the following tasks:
 
 Create a New VM (should be named something simple "Elk-Server") Keep note of the Private IP (10.1.0.4) and the Public IP (0.0.0.0) you will need the Private IP to SSH into the VM and the Public IP to connect to the Kibana Portal (HTTP Site) to view all Metrics/Syslogs. Download and Configure the "elk-docker" container "In the hosts.conf you will need to add a new group [elkservers] and the Private IP (10.1.0.4) to the group. Then you need to create a new ansible-playbook (elk.yml) that will download, install, configures the "Elk-Server" to map the following ports [5601], and starts the container. Launch and expose the container "After installing and starting the new container. You can verify that the container is up and running by SSHing into the container from your JumpBox (SAW). Once you are in the [Elk-Server] run the command [sudo docker ps] Create new Inbound Security Rules to allow Ports: 5601, 22, 80, 443"The Inbound Security Rules should allow access from your Personal Network" Open a new browser and type in the [Public IP:5601] to access the Kibana Portal Site.
-
-<h2>Using the Playbook
+**Using the Playbook**
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: SSH into the control node and follow the steps below:
 
@@ -98,7 +88,7 @@ Which file do you update to make Ansible run the playbook on a specific machine?
 
 Which URL do you navigate to in order to check that the ELK server is running? The URL to use to verify the Elk-Server is running is the Public IP (0.0.0.0:5601)
 
-# The commands needed to run the Ansible configuration for the Elk-Server are:
+### The commands needed to run the Ansible configuration for the Elk-Server are:
 
 ssh azadmin@JumpBox(PrivateIP) sudo docker container list -a (locate your ansible container) sudo docker start container (name of the container) sudo docker attach container (name of the container) cd /etc/ansible/ ansible-playbook elk.yml (configures Elk-Server and starts the Elk container on the Elk-Server) wait a couple minutes for the implementation of the Elk-Server cd /etc/ansible/roles/ ansible-playbook filebeat-playbook.yml (installs Filebeat and Metricbeat) open a new web browser (Elk-Server PublicIP:5601) This will bring up the Kibana Web Portal
 
