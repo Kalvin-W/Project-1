@@ -45,7 +45,7 @@ What does Metricbeat record?
 Metricbeat records metric and statistical data from the operating system and from services running on the server.
 
 
-The configuration details of each machine may be found below:
+The configuration details of each machine may be below:
 
 
 
@@ -98,7 +98,7 @@ Machines within the network can only be accessed by SSH.
 
 The only machine that is able to connect to the Elk-Server (10.1.0.4) is via JumpBox from Private IP (10.0.0.4)
 
-A summary of the access policies in place can be found in the table below.
+A summary of the access policies in place can be found below.
 
 Name Publicly Accessible Allowed IP Addresses
 
